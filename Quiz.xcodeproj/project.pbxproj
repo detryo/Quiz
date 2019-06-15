@@ -58,24 +58,16 @@
 		36A5B83222B3B41F00D42901 /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
-				36A5B84522B3B4B900D42901 /* Model */,
 				36A5B83322B3B41F00D42901 /* AppDelegate.swift */,
 				36A5B83522B3B41F00D42901 /* ViewController.swift */,
+				36A5B84822B3B53000D42901 /* QuizManager.swift */,
+				36A5B84622B3B4DD00D42901 /* Question.swift */,
 				36A5B83722B3B41F00D42901 /* Main.storyboard */,
 				36A5B83A22B3B42000D42901 /* Assets.xcassets */,
 				36A5B83C22B3B42000D42901 /* LaunchScreen.storyboard */,
 				36A5B83F22B3B42000D42901 /* Info.plist */,
 			);
 			path = Quiz;
-			sourceTree = "<group>";
-		};
-		36A5B84522B3B4B900D42901 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				36A5B84622B3B4DD00D42901 /* Question.swift */,
-				36A5B84822B3B53000D42901 /* QuizManager.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
