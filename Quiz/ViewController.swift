@@ -31,12 +31,9 @@ class ViewController: UIViewController {
     }
     
     func displayQuestion() {
-        question = quiz.randomQuestion()
-        
+       question = quiz.randomQuestion()
         labelQuestion.text = question.question
-        
         labelCorrectAndIncorrect.text = ""
-        
         
         if question.option.count == 2 {
             buttonOptionOne.isHidden = false
@@ -45,11 +42,9 @@ class ViewController: UIViewController {
             buttonOptionFour.isHidden = true
             buttonOptionOne.isEnabled = true
             buttonOptionTwo.isEnabled = true
-            buttonOptionOne.setTitle(question.option[0], for: [])
-            buttonOptionTwo.setTitle(question.option[1], for: [])
-        }
-        else
-        {
+            buttonOptionOne.setTitle(question.option[0], for: .normal)
+            buttonOptionTwo.setTitle(question.option[1], for: .normal)
+        }else {
             buttonOptionOne.isHidden = false
             buttonOptionTwo.isHidden = false
             buttonOptionTree.isHidden = false
@@ -58,12 +53,12 @@ class ViewController: UIViewController {
             buttonOptionTwo.isEnabled = true
             buttonOptionTree.isEnabled = true
             buttonOptionFour.isEnabled = true
-            buttonOptionOne.setTitle(question.option[0], for: [])
-            buttonOptionTwo.setTitle(question.option[1], for: [])
-            buttonOptionTree.setTitle(question.option[2], for: [])
-            buttonOptionFour.setTitle(question.option[3], for: [])
+            buttonOptionOne.setTitle(question.option[0], for: .normal)
+            buttonOptionTwo.setTitle(question.option[1], for: .normal)
+            buttonOptionTree.setTitle(question.option[2], for: .normal)
+            buttonOptionFour.setTitle(question.option[3], for: .normal)
+            
         }
-        
         nextQuestion.isHidden = true
         startAgain.isHidden = true
     }
@@ -103,7 +98,7 @@ class ViewController: UIViewController {
         buttonOptionFour.isEnabled = false
         nextQuestion.isHidden = false
         
-        sender.isEnabled = true
+        sender.isEnabled = true;
         
         if question.answer == sender.tag {
             quiz.correctQuestions += 1
@@ -114,6 +109,9 @@ class ViewController: UIViewController {
             labelCorrectAndIncorrect.textColor = UIColor(red: 239/255.0, green: 130/255.0, blue: 100/255.0, alpha: 1.0)
         }
     }
+    
+    
+    
     
     @IBAction func startAgain(_ sender: UIButton) {
         // Generate Random Questions

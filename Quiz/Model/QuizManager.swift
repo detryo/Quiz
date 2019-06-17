@@ -61,14 +61,14 @@ class QuizManager {
     
     func generateUnquieNumber()-> Int {
         
-        var randomNumber = GKRandomSource.sharedRandom().nextInt(upperBound: self.quiz.count)
+        var randomNumber = GKRandomSource.sharedRandom().nextInt(upperBound: quiz.count)
+        
         while randomNumberGenerated.contains(randomNumber) {
-            randomNumber = GKRandomSource.sharedRandom().nextInt(upperBound: self.quiz.count)
+            randomNumber = GKRandomSource.sharedRandom().nextInt(upperBound: quiz.count)
         }
         
         randomNumberGenerated.append(randomNumber)
-        
-        return randomNumber
+         return randomNumber
     }
     
     // MARK: Random questionselection
