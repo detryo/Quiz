@@ -40,6 +40,7 @@
                                     <constraint firstAttribute="height" constant="60" id="5HJ-Tn-KOl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="ButtonOptionOne">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -118,7 +119,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.077574823943661969" green="0.32284330985915494" blue="0.630584286971831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.047058823530000002" green="0.47450980390000003" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="9pm-wz-c9e" firstAttribute="trailing" secondItem="Ews-jn-oOm" secondAttribute="trailing" id="1gN-yD-BPP"/>
                             <constraint firstItem="Owh-Uq-uHx" firstAttribute="leading" secondItem="9pm-wz-c9e" secondAttribute="leading" id="3xQ-UI-1sX"/>

@@ -8,9 +8,11 @@
 
 import UIKit
 import GameKit
+import AudioToolbox
 
 class ViewController: UIViewController {
     
+    var gameSound: SystemSoundID = 0
     var quiz = QuizManager()
     var question: Question!
 
@@ -27,7 +29,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        loadGameStartSound()
+        playGameStartSound()
         displayQuestion()
+    }
+    
+    // Sound implementation
+    func loadGameStartSound() {
+        let path = Bundle.main.path(forResource: "GameSound", ofType: "wav")
+        let soundURL = URL(fileURLWithPath: path!)
+        AudioServicesCreateSystemSoundID(soundURL as CFURL, &gameSound)
+    }
+    
+    func playGameStartSound() {
+        AudioServicesPlaySystemSound(gameSound)
     }
     
     func displayQuestion() {
@@ -64,7 +79,7 @@ class ViewController: UIViewController {
     }
     
     func displayScore() {
-        // Hide the answer uttons
+        // Hide the answer buttons
         buttonOptionOne.isHidden = true
         buttonOptionTwo.isHidden = true
         buttonOptionTree.isHidden = true
@@ -109,9 +124,6 @@ class ViewController: UIViewController {
             labelCorrectAndIncorrect.textColor = UIColor(red: 239/255.0, green: 130/255.0, blue: 100/255.0, alpha: 1.0)
         }
     }
-    
-    
-    
     
     @IBAction func startAgain(_ sender: UIButton) {
         // Generate Random Questions

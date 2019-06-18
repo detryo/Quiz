@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		369E5FA022B9512700A5004C /* GameSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 369E5F9F22B9512700A5004C /* GameSound.wav */; };
 		36A5B83422B3B41F00D42901 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A5B83322B3B41F00D42901 /* AppDelegate.swift */; };
 		36A5B83622B3B41F00D42901 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A5B83522B3B41F00D42901 /* ViewController.swift */; };
 		36A5B83922B3B41F00D42901 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36A5B83722B3B41F00D42901 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		369E5F9F22B9512700A5004C /* GameSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSound.wav; sourceTree = "<group>"; };
 		36A5B83022B3B41F00D42901 /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A5B83322B3B41F00D42901 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36A5B83522B3B41F00D42901 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				36C3AE4022B7E225000AC646 /* Model */,
 				36A5B83322B3B41F00D42901 /* AppDelegate.swift */,
 				36A5B83522B3B41F00D42901 /* ViewController.swift */,
+				369E5F9F22B9512700A5004C /* GameSound.wav */,
 				36A5B83722B3B41F00D42901 /* Main.storyboard */,
 				36A5B83A22B3B42000D42901 /* Assets.xcassets */,
 				36A5B83C22B3B42000D42901 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				369E5FA022B9512700A5004C /* GameSound.wav in Resources */,
 				36A5B83E22B3B42000D42901 /* LaunchScreen.storyboard in Resources */,
 				36A5B83B22B3B42000D42901 /* Assets.xcassets in Resources */,
 				36A5B83922B3B41F00D42901 /* Main.storyboard in Resources */,
